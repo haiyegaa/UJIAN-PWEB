@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Inventory Barang</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Inventory Barang</h1>
+
+  <form id="formBarang">
+    <input type="hidden" id="editIndex">
+    <input type="text" id="nama" placeholder="Nama Barang" required>
+    <input type="text" id="kode" placeholder="Kode Barang" required>
+    <input type="number" id="harga" placeholder="Harga Barang" required>
+    <button type="submit">Simpan</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Nama Barang</th>
+        <th>Kode</th>
+        <th>Harga</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody id="tabelBarang"></tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
